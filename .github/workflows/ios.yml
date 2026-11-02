@@ -1,0 +1,30 @@
+name: Build AI Mat iOS
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-and-build:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source and model
+        run: python3 scripts/build.py prepare
+      - name: Test tracking, geometry and warning rules
+        run: swift test
+      - name: Compile simulator app
+        run: python3 scripts/build.py simulator
+      - name: Build unsigned device IPA
+        run: python3 scripts/build.py unsigned
+      - name: Upload unsigned IPA (Apple signing required to install)
+        uses: actions/upload-artifact@v4
+        with:
+          name: AIMat-unsigned-IPA
+          path: build/AIMat-unsigned.ipa
+          if-no-files-found: error

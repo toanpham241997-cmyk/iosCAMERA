@@ -1,0 +1,53 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		5BCA79AD5D7CB35485D3E954 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/AIMatApp.swift"; sourceTree = SOURCE_ROOT; };
+		1CD40C6173B5D2D088B94D2B = { isa = PBXBuildFile; fileRef = 5BCA79AD5D7CB35485D3E954; };
+		BAA828F1AD93C5BBAF9D6DC3 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/CameraViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		6CCBD1E3A98B71C5129CEF62 = { isa = PBXBuildFile; fileRef = BAA828F1AD93C5BBAF9D6DC3; };
+		EB9E0D6EBC1CE7DD484585DD = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/Core/Detection.swift"; sourceTree = SOURCE_ROOT; };
+		F6924B52786B28BE9ADDC5E4 = { isa = PBXBuildFile; fileRef = EB9E0D6EBC1CE7DD484585DD; };
+		800E9CDB0EC73D6EE935D118 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/Core/HazardEngine.swift"; sourceTree = SOURCE_ROOT; };
+		0E32B5331B50AACF642C9DAB = { isa = PBXBuildFile; fileRef = 800E9CDB0EC73D6EE935D118; };
+		5135ABD4C7CA3E40EF4105AF = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/Services/CameraService.swift"; sourceTree = SOURCE_ROOT; };
+		90DFBF510EE2F8639B4D551B = { isa = PBXBuildFile; fileRef = 5135ABD4C7CA3E40EF4105AF; };
+		F6DF6B10CD63775DFA20D02F = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/Services/PhotoService.swift"; sourceTree = SOURCE_ROOT; };
+		3592830F82A7B1F377308BE6 = { isa = PBXBuildFile; fileRef = F6DF6B10CD63775DFA20D02F; };
+		5920955389736CFFADEB47C7 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/Services/VisionEngine.swift"; sourceTree = SOURCE_ROOT; };
+		198D2F663D11F0C02138C7B9 = { isa = PBXBuildFile; fileRef = 5920955389736CFFADEB47C7; };
+		98349DF40F056A35AEE3B57D = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/UI/CameraScreen.swift"; sourceTree = SOURCE_ROOT; };
+		6F26948B0C0D8D8DEE927C83 = { isa = PBXBuildFile; fileRef = 98349DF40F056A35AEE3B57D; };
+		688A87272F3A08D6FF20F180 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/UI/ESPOverlay.swift"; sourceTree = SOURCE_ROOT; };
+		606216D5F0BB0F9A50C2DC47 = { isa = PBXBuildFile; fileRef = 688A87272F3A08D6FF20F180; };
+		31F70DE5179AFEB06B933430 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/UI/SettingsScreen.swift"; sourceTree = SOURCE_ROOT; };
+		09D1EFE3BA4BBD353578ED8B = { isa = PBXBuildFile; fileRef = 31F70DE5179AFEB06B933430; };
+		49678C3FFB488722A86B2A15 = { isa = PBXFileReference; lastKnownFileType = "sourcecode.swift"; path = "AIMat/UI/Theme.swift"; sourceTree = SOURCE_ROOT; };
+		39ABBF70BE2CC76C2FF9971E = { isa = PBXBuildFile; fileRef = 49678C3FFB488722A86B2A15; };
+		9502A1BDBCF9ED1238BE64E7 = { isa = PBXFileReference; lastKnownFileType = "file.mlmodel"; path = "AIMat/Resources/YOLOv3TinyInt8LUT.mlmodel"; sourceTree = SOURCE_ROOT; };
+		818F251C49C93AAE68D71AD4 = { isa = PBXBuildFile; fileRef = 9502A1BDBCF9ED1238BE64E7; };
+		D19796F274EF787623A8970D = { isa = PBXFileReference; lastKnownFileType = "folder.assetcatalog"; path = "AIMat/Resources/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		880D19D2D00ECE1A00D9144A = { isa = PBXBuildFile; fileRef = D19796F274EF787623A8970D; };
+		D97518D349B56DB052062BFE = { isa = PBXFileReference; lastKnownFileType = "text.xml"; path = "AIMat/Resources/PrivacyInfo.xcprivacy"; sourceTree = SOURCE_ROOT; };
+		DE6F66844FB907E917F0C09B = { isa = PBXBuildFile; fileRef = D97518D349B56DB052062BFE; };
+		06E5D6EEC680B33BC22BEED7 = { isa = PBXFileReference; path = "AIMat/Info.plist"; sourceTree = SOURCE_ROOT; };
+		72638434B198B71E5CD8C0C5 = { isa = PBXFileReference; path = "README.md"; sourceTree = SOURCE_ROOT; };
+		7D1043473D55BFA90E8530D3 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = AIMat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDC4F23F93125BBEEAE800C = { isa = PBXGroup; children = (7D1043473D55BFA90E8530D3,); name = Products; sourceTree = "<group>"; };
+		64292B1C2B2E13EAD8788FC8 = { isa = PBXGroup; children = (5BCA79AD5D7CB35485D3E954, BAA828F1AD93C5BBAF9D6DC3, EB9E0D6EBC1CE7DD484585DD, 800E9CDB0EC73D6EE935D118, 5135ABD4C7CA3E40EF4105AF, F6DF6B10CD63775DFA20D02F, 5920955389736CFFADEB47C7, 98349DF40F056A35AEE3B57D, 688A87272F3A08D6FF20F180, 31F70DE5179AFEB06B933430, 49678C3FFB488722A86B2A15, 9502A1BDBCF9ED1238BE64E7, D19796F274EF787623A8970D, D97518D349B56DB052062BFE, 06E5D6EEC680B33BC22BEED7, 72638434B198B71E5CD8C0C5, FBDC4F23F93125BBEEAE800C,); sourceTree = "<group>"; };
+		BCE16DD0260827ECF338C787 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (1CD40C6173B5D2D088B94D2B, 6CCBD1E3A98B71C5129CEF62, F6924B52786B28BE9ADDC5E4, 0E32B5331B50AACF642C9DAB, 90DFBF510EE2F8639B4D551B, 3592830F82A7B1F377308BE6, 198D2F663D11F0C02138C7B9, 6F26948B0C0D8D8DEE927C83, 606216D5F0BB0F9A50C2DC47, 09D1EFE3BA4BBD353578ED8B, 39ABBF70BE2CC76C2FF9971E, 818F251C49C93AAE68D71AD4,); runOnlyForDeploymentPostprocessing = 0; };
+		0189424A5A60FED329FA868E = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (880D19D2D00ECE1A00D9144A, DE6F66844FB907E917F0C09B,); runOnlyForDeploymentPostprocessing = 0; };
+		7561BFB015D8F536760CB671 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AB52CB08E0FDF02BF6C67C33 = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = "iphoneos"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; CLANG_ENABLE_MODULES = "YES"; SWIFT_VERSION = "5.0"; SWIFT_STRICT_CONCURRENCY = "minimal"; ENABLE_USER_SCRIPT_SANDBOXING = "YES"; CLANG_ENABLE_OBJC_ARC = "YES"; GCC_C_LANGUAGE_STANDARD = "gnu17"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = "dwarf"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG"; }; name = Debug; };
+		5283471FF90C511CFE244FFF = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = "iphoneos"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; CLANG_ENABLE_MODULES = "YES"; SWIFT_VERSION = "5.0"; SWIFT_STRICT_CONCURRENCY = "minimal"; ENABLE_USER_SCRIPT_SANDBOXING = "YES"; CLANG_ENABLE_OBJC_ARC = "YES"; GCC_C_LANGUAGE_STANDARD = "gnu17"; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SWIFT_COMPILATION_MODE = "wholemodule"; }; name = Release; };
+		4BA304E783CFBB9FA6E56552 = { isa = XCConfigurationList; buildConfigurations = (AB52CB08E0FDF02BF6C67C33, 5283471FF90C511CFE244FFF,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		59E1BEE911F66DA37FEBACDC = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "AIMat"; PRODUCT_BUNDLE_IDENTIFIER = "vn.aimat.camera"; CODE_SIGN_STYLE = "Automatic"; INFOPLIST_FILE = "AIMat/Info.plist"; GENERATE_INFOPLIST_FILE = "NO"; TARGETED_DEVICE_FAMILY = "1"; ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; COREML_CODEGEN_LANGUAGE = "Swift"; MARKETING_VERSION = "1.0.0"; CURRENT_PROJECT_VERSION = "1"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = "NO"; SWIFT_EMIT_LOC_STRINGS = "YES"; ENABLE_PREVIEWS = "YES"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; }; name = Debug; };
+		F4C425279CD5DDD18FD6DC6D = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "AIMat"; PRODUCT_BUNDLE_IDENTIFIER = "vn.aimat.camera"; CODE_SIGN_STYLE = "Automatic"; INFOPLIST_FILE = "AIMat/Info.plist"; GENERATE_INFOPLIST_FILE = "NO"; TARGETED_DEVICE_FAMILY = "1"; ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; COREML_CODEGEN_LANGUAGE = "Swift"; MARKETING_VERSION = "1.0.0"; CURRENT_PROJECT_VERSION = "1"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = "NO"; SWIFT_EMIT_LOC_STRINGS = "YES"; ENABLE_PREVIEWS = "YES"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; }; name = Release; };
+		1329ED92EA4767251759D0DA = { isa = XCConfigurationList; buildConfigurations = (59E1BEE911F66DA37FEBACDC, F4C425279CD5DDD18FD6DC6D,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		0E8A3AD980EC179856012B7E = { isa = PBXNativeTarget; buildConfigurationList = 1329ED92EA4767251759D0DA; buildPhases = (BCE16DD0260827ECF338C787, 7561BFB015D8F536760CB671, 0189424A5A60FED329FA868E,); buildRules = (); dependencies = (); name = AIMat; productName = AIMat; productReference = 7D1043473D55BFA90E8530D3; productType = "com.apple.product-type.application"; };
+		98F54143AB4E86B28C3AFEE0 = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600; TargetAttributes = { 0E8A3AD980EC179856012B7E = { CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 4BA304E783CFBB9FA6E56552; compatibilityVersion = "Xcode 14.0"; developmentRegion = vi; hasScannedForEncodings = 0; knownRegions = (vi, en, Base); mainGroup = 64292B1C2B2E13EAD8788FC8; productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E,); };
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0;
+}
