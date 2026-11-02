@@ -1,4 +1,5 @@
 import Foundation
+import CoreGraphics
 
 struct HazardState: Equatable {
     var isWarning = false

@@ -1,4 +1,5 @@
 import Foundation
+import CoreGraphics
 
 struct Detection: Identifiable, Equatable {
     var id: Int

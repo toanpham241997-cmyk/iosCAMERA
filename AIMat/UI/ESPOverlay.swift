@@ -25,7 +25,10 @@ struct ESPOverlay: View {
                 context.stroke(Path(rect), with: .color(color.opacity(0.3)), lineWidth: 1)
                 context.stroke(corners, with: .color(color), style: StrokeStyle(lineWidth: 2.5, lineCap: .round))
                 let title = "\(item.title)  #\(item.id)  \(Int(item.confidence * 100))%"
-                let text = context.resolve(Text(title).font(.system(.caption, design: .monospaced).weight(.semibold)).foregroundColor(color))
+                let caption = Text(title)
+                    .font(.system(.caption, design: .monospaced).weight(.semibold))
+                    .foregroundColor(color)
+                let text = context.resolve(caption)
                 let measured = text.measure(in: CGSize(width: max(0, size.width - 16), height: 60))
                 let labelWidth = min(size.width - 8, measured.width + 16)
                 let label = CGRect(x: min(max(4, rect.minX), max(4, size.width - labelWidth - 4)),

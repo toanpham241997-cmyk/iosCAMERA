@@ -10,20 +10,24 @@ jobs:
     runs-on: macos-15
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Show selected Apple toolchain
+        run: |
+          xcodebuild -version
+          xcrun swift --version
       - name: Verify source and model
         run: python3 scripts/build.py prepare
       - name: Test tracking, geometry and warning rules
-        run: swift test
+        run: xcrun swift test
       - name: Compile simulator app
         run: python3 scripts/build.py simulator
       - name: Build unsigned device IPA
         run: python3 scripts/build.py unsigned
       - name: Upload unsigned IPA (Apple signing required to install)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: AIMat-unsigned-IPA
           path: build/AIMat-unsigned.ipa

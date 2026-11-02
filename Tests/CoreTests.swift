@@ -1,4 +1,5 @@
 import XCTest
+import CoreGraphics
 @testable import AIMatCore
 
 final class CoreTests: XCTestCase {
